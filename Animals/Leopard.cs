@@ -2,5 +2,8 @@
 {
     class Leopard : Felin
     {
+        public Leopard()
+        {
+        }
     }
 }
