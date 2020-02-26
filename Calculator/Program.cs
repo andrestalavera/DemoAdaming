@@ -12,6 +12,10 @@ namespace Calculator
                 Console.WriteLine(calculator.Add(2, 2, 3));
                 Console.WriteLine(calculator.Divide(5, 2));
             }
+            catch (AddByTwoException ex)
+            {
+                Console.WriteLine("Pas de 2 !!!!! " + ex.Message);
+            }
             catch (NotImplementedException ex)
             {
                 Console.WriteLine("Termine d'écrire ton programme. " + ex.Message);

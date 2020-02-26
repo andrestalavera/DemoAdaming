@@ -28,11 +28,19 @@
 
         public int Add(int a, int b)
         {
+            if (a == 2 || b == 2)
+            {
+                throw new AddByTwoException("car je suis le Schtroumph Grognon.");
+            }
             return a + b;
         }
 
         public int Add(int a, int b, int c)
         {
+            if (a == 2 || b == 2 || c == 2)
+            {
+                throw new AddByTwoException("car je m'appelle Garfield");
+            }
             return a + b + c;
         }
     }
